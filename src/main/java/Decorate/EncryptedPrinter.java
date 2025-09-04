@@ -7,7 +7,6 @@ class EncryptedPrinter extends PrinterDecorator {
         super(printer);
     }
 
-    // Simple Caesar cipher encryption (shift by 3)
     private String encrypt(String message) {
         StringBuilder encrypted = new StringBuilder();
         for (char c : message.toCharArray()) {
